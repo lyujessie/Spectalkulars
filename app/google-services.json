@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "447078159251",
+    "firebase_url": "https://spectalkulars.firebaseio.com",
+    "project_id": "spectalkulars",
+    "storage_bucket": "spectalkulars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447078159251:android:227548a4a371a736",
+        "android_client_info": {
+          "package_name": "com.example.jiexinlyu.spectalkulars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447078159251-e31ltoa78ehilh3ololl6rsp8cvo1upo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm2rWvkj9aLaTsEU3P4Urd1GG37RES3YE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447078159251-e31ltoa78ehilh3ololl6rsp8cvo1upo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

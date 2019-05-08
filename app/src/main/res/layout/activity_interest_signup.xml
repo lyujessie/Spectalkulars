@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InterestSignupActivity">
+
+    <ImageView
+        android:id="@+id/interests_title"
+        android:layout_width="355dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/interests_title" />
+
+    <Button
+        android:id="@+id/tag_gameofthrones"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:text="Game of Thrones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interests_title" />
+
+    <Button
+        android:id="@+id/tag_elections2020"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:text="Elections 2020"
+        app:layout_constraintStart_toEndOf="@+id/tag_gameofthrones"
+        app:layout_constraintTop_toBottomOf="@+id/interests_title" />
+
+    <Button
+        android:id="@+id/tag_avengers"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:text="Avengers: End Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag_elections2020"
+        app:layout_constraintTop_toBottomOf="@+id/interests_title" />
+
+    <Button
+        android:id="@+id/tag_stockmarket"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:text="Stock Market"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_gameofthrones" />
+
+    <Button
+        android:id="@+id/tag_cat"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Cat"
+        app:layout_constraintStart_toEndOf="@+id/tag_stockmarket"
+        app:layout_constraintTop_toBottomOf="@+id/tag_elections2020" />
+
+    <Button
+        android:id="@+id/tag_cryptocurrency"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:text="Cryptocurrency"
+        app:layout_constraintStart_toEndOf="@+id/tag_cat"
+        app:layout_constraintTop_toBottomOf="@+id/tag_avengers" />
+
+    <Button
+        android:id="@+id/homepage_next_bt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:onClick="gotoHomepage"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/tag_baking"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Baking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_stockmarket" />
+
+    <Button
+        android:id="@+id/tag_travel"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Travel"
+        app:layout_constraintStart_toEndOf="@+id/tag_baking"
+        app:layout_constraintTop_toBottomOf="@+id/tag_cat" />
+
+    <Button
+        android:id="@+id/tag_graduation"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Graduation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag_travel"
+        app:layout_constraintTop_toBottomOf="@+id/tag_cryptocurrency" />
+
+    <Button
+        android:id="@+id/tag_restaurants"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Restaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_baking" />
+
+    <Button
+        android:id="@+id/tag_weather"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Weather"
+        app:layout_constraintEnd_toStartOf="@+id/tag_jogging"
+        app:layout_constraintStart_toEndOf="@+id/tag_restaurants"
+        app:layout_constraintTop_toBottomOf="@+id/tag_travel" />
+
+    <Button
+        android:id="@+id/tag_jogging"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Jogging"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_graduation" />
+
+    <Button
+        android:id="@+id/tag_hiking"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Hiking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_restaurants" />
+
+    <Button
+        android:id="@+id/tag_weekend"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Weekends"
+        app:layout_constraintEnd_toStartOf="@+id/tag_movie"
+        app:layout_constraintStart_toEndOf="@+id/tag_hiking"
+        app:layout_constraintTop_toBottomOf="@+id/tag_weather" />
+
+    <Button
+        android:id="@+id/tag_movie"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tag"
+        android:onClick="onClick"
+        android:text="Movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_jogging" />
+</android.support.constraint.ConstraintLayout>
