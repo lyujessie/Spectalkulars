@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                         if (snapshot != null && snapshot.exists()) {
                             Log.d(TAG, "Current data: " + snapshot.getData());
                             if (snapshot.getData().get("match").equals(true)) {
-                                ArrayList<String> topic = (ArrayList<String>) snapshot.getData().get("topic");
+                                String topic = (String) snapshot.getData().get("topic");
                                 String match_user = snapshot.getData().get("match_user").toString();
                                 notifyMatch(topic, match_user);
                             }
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void notifyMatch(final ArrayList<String> topic, final String match_user) {
+    public void notifyMatch(final String topic, final String match_user) {
         final SlidingUpPanelLayout mainActivityLayout = (SlidingUpPanelLayout) findViewById(R.id.main_activity_layout);
 
         LayoutInflater layoutInflater = (LayoutInflater) MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -122,11 +122,7 @@ public class MainActivity extends AppCompatActivity {
         //display the popup window
         TextView matchTopic = (TextView) popupWindow.getContentView().findViewById(R.id.match_topic);
         TextView matchUseraname = (TextView) popupWindow.getContentView().findViewById(R.id.match_userid);
-        StringBuilder topicTxt = new StringBuilder();
-        for (String singleTopic: topic) {
-            topicTxt.append(singleTopic + "\n");
-        }
-        matchTopic.setText(topicTxt);
+        matchTopic.setText(topic);
         matchUseraname.setText(match_user);
         popupWindow.showAtLocation(mainActivityLayout, Gravity.CENTER, 0, 0);
 

@@ -1,11 +1,14 @@
 package com.example.jiexinlyu.spectalkulars;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -106,7 +109,7 @@ public class PairingActivity extends AppCompatActivity {
             for (final String interest : commonInterestsList) {
                 final Button topic_bt = new Button(this);
                 topic_bt.setText(interest);
-                topic_bt.setBackgroundResource(R.drawable.button);
+                topic_bt.setBackgroundResource(R.drawable.tag_topic);
                 topic_bt.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
